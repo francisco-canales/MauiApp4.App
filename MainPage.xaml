@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp4.MainPage"
+             Shell.NavBarIsVisible="False"
+             >
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="sales.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+            
+
+            <Label
+                Text="Calcula el cambio $$"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            <Entry Placeholder="Costo de la venta" x:Name="costo"/>
+            <Entry Placeholder="Introduce con cuanto pagaras" x:Name="pago"/>
+            <Button Text="Calcular el cambio" x:Name="btnCambio" Clicked="btnCambio_Clicked" />
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
